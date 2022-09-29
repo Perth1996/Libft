@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
+//comparing between 2 str only in n index
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
