@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 #include <stdio.h>
-
+//like strsteri but use malloc
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;
