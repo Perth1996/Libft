@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
+//finding char in string if find return i index to '\0' 
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
