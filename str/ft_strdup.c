@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
+//like memcpy but use malloc
 char	*ft_strdup(const char *s1)
 {
 	char	*str;
