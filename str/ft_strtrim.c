@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
+//find and cut head&tail of string by use strrchr 
+//use malloc (len is index)
 static char	*ft_start(char *s1, char const *set)
 {
 	size_t	i;
