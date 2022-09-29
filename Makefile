@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 FLAGS = -Wall -Wextra -Werror
-
+//Declaration
 NAME = libft.a
 
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c\
@@ -24,13 +24,13 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c\
 
 BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstadd_back.c ft_lstsize.c ft_lstlast.c\
        	ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
-
+//Command
 OBJS = $(SRCS:.c=.o)
 
 BONUS_OBJS = $(BONUS:.c=.o)
 
 all:	$(NAME)
-
+//target file : dependency fille
 %o: %c
 	gcc $(w) -c $< -o $@
 
@@ -47,5 +47,5 @@ re:	fclean all
 
 bonus:	$(BONUS_OBJS)
 	ar -rcs $(NAME) $(BONUS_OBJS)
-
+//tell that what are there any command in Makefile
 .PHONY: clean fclean all re bonus
