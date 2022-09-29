@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 #include <stdio.h>
-
+//bringing *s1 + *s2 by use memmove and use malloc
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str1;
