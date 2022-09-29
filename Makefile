@@ -6,13 +6,11 @@
 #    By: plawkiat <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/31 08:42:31 by plawkiat          #+#    #+#              #
-#    Updated: 2022/09/29 07:07:53 by plawkiat         ###   ########.fr        #
+#    Updated: 2022/09/29 07:15:25 by plawkiat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 FLAGS = -Wall -Wextra -Werror
-
-//declaration
 
 NAME = libft.a
 
@@ -27,13 +25,9 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c\
 BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstadd_back.c ft_lstsize.c ft_lstlast.c\
        	ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
-//command
-
 OBJS = $(SRCS:.c=.o)
 
 BONUS_OBJS = $(BONUS:.c=.o)
-
-//target file : dependency file
 
 all:	$(NAME)
 
@@ -54,5 +48,4 @@ re:	fclean all
 bonus:	$(BONUS_OBJS)
 	ar -rcs $(NAME) $(BONUS_OBJS)
 
-//tell us know there are any command in Makefile 
 .PHONY: clean fclean all re bonus
