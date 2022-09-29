@@ -30,7 +30,7 @@ OBJS = $(SRCS:.c=.o)
 BONUS_OBJS = $(BONUS:.c=.o)
 
 all:	$(NAME)
-//target file : dependency fille
+//target file : dependency file
 %o: %c
 	gcc $(w) -c $< -o $@
 
@@ -47,5 +47,5 @@ re:	fclean all
 
 bonus:	$(BONUS_OBJS)
 	ar -rcs $(NAME) $(BONUS_OBJS)
-//tell that what are there any command in Makefile
+//tell that what are the command in Makefile
 .PHONY: clean fclean all re bonus
