@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
+//finding small in large only in len if find return index of large to '\0' 
+//and else is Null
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	char	*large;
