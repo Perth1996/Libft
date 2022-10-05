@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-W = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror
 //Declaration
 NAME = libft.a
 
@@ -32,7 +32,7 @@ BONUS_OBJS = $(BONUS:.c=.o)
 all:	$(NAME)
 //target file : dependency file
 %o: %c
-	gcc $(w) -c $< -o $@
+	gcc $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
