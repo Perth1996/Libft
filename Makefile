@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-FLAGS = -Wall -Wextra -Werror
+W = -Wall -Wextra -Werror
 //Declaration
 NAME = libft.a
 
